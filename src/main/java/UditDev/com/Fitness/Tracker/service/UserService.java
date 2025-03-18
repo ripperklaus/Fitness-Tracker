@@ -15,7 +15,8 @@ public class UserService {
         if (users.stream().anyMatch(user -> user.getEmail().equals(email))) {
             throw new IllegalArgumentException("Email already registered");
         }
-        User user = new User(UUID.randomUUID().toString(), name, email, password);
+        User user;
+        user = new User(UUID.randomUUID().toString(), name, email, password);
         users.add(user);
         return user;
     }
