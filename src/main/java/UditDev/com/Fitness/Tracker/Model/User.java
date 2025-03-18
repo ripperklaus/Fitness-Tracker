@@ -4,6 +4,9 @@ package UditDev.com.Fitness.Tracker.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 
 @Data
 @AllArgsConstructor
